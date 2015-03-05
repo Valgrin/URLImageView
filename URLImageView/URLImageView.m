@@ -19,6 +19,18 @@
 
 @implementation URLImageView
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self)
+    {
+        [self addSubview: self.activityIndicator];
+        self.imageView = [[UIImageView alloc] init];
+        [self addSubview: self.imageView];        
+    }
+    return self;
+}
+
 - (id)initWithFrame:(CGRect)aRect
 {
     self = [super initWithFrame:aRect];
@@ -34,6 +46,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    self.backgroundColor = [UIColor redColor];
     self.activityIndicator.frame = self.imageView.frame = self.frame;
 }
 
