@@ -14,6 +14,7 @@
 		AC1CEF6E1AA8AFFD00F0799B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1CEF6D1AA8AFFD00F0799B /* Images.xcassets */; };
 		AC1CEF711AA8AFFD00F0799B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1CEF6F1AA8AFFD00F0799B /* LaunchScreen.xib */; };
 		AC1CEF7D1AA8AFFD00F0799B /* URLImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1CEF7C1AA8AFFD00F0799B /* URLImageViewTests.m */; };
+		AC1CEF881AA8B08D00F0799B /* URLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1CEF871AA8B08D00F0799B /* URLImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		AC1CEF761AA8AFFD00F0799B /* URLImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1CEF7B1AA8AFFD00F0799B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC1CEF7C1AA8AFFD00F0799B /* URLImageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLImageViewTests.m; sourceTree = "<group>"; };
+		AC1CEF861AA8B08D00F0799B /* URLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLImageView.h; sourceTree = "<group>"; };
+		AC1CEF871AA8B08D00F0799B /* URLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				AC1CEF6D1AA8AFFD00F0799B /* Images.xcassets */,
 				AC1CEF6F1AA8AFFD00F0799B /* LaunchScreen.xib */,
 				AC1CEF601AA8AFFD00F0799B /* Supporting Files */,
+				AC1CEF861AA8B08D00F0799B /* URLImageView.h */,
+				AC1CEF871AA8B08D00F0799B /* URLImageView.m */,
 			);
 			path = URLImageView;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				AC1CEF691AA8AFFD00F0799B /* ViewController.m in Sources */,
 				AC1CEF661AA8AFFD00F0799B /* AppDelegate.m in Sources */,
+				AC1CEF881AA8B08D00F0799B /* URLImageView.m in Sources */,
 				AC1CEF631AA8AFFD00F0799B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
