@@ -43,11 +43,22 @@
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder: aDecoder];
+    if (self)
+    {
+        [self addSubview: self.activityIndicator];
+        self.imageView = [[UIImageView alloc] init];
+        [self addSubview: self.imageView];
+    }
+    return self;
+}
+
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    self.backgroundColor = [UIColor redColor];
-    self.activityIndicator.frame = self.imageView.frame = self.frame;
+    self.activityIndicator.frame = self.imageView.frame = self.bounds;
 }
 
 #pragma mark - Accessors

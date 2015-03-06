@@ -15,8 +15,8 @@
 		AC1CEF711AA8AFFD00F0799B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1CEF6F1AA8AFFD00F0799B /* LaunchScreen.xib */; };
 		AC1CEF7D1AA8AFFD00F0799B /* URLImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1CEF7C1AA8AFFD00F0799B /* URLImageViewTests.m */; };
 		AC1CEF881AA8B08D00F0799B /* URLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1CEF871AA8B08D00F0799B /* URLImageView.m */; };
-		AC1CEF8C1AA8C32700F0799B /* URLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1CEF8A1AA8C32700F0799B /* URLTableViewCell.m */; };
-		AC1CEF8D1AA8C32700F0799B /* URLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1CEF8B1AA8C32700F0799B /* URLTableViewCell.xib */; };
+		AC4E1D801AA999E0003EDAFE /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4E1D7F1AA999E0003EDAFE /* Track.m */; };
+		AC4E1D831AA99B1A003EDAFE /* Tracks.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4E1D821AA99B1A003EDAFE /* Tracks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +45,10 @@
 		AC1CEF7C1AA8AFFD00F0799B /* URLImageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLImageViewTests.m; sourceTree = "<group>"; };
 		AC1CEF861AA8B08D00F0799B /* URLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLImageView.h; sourceTree = "<group>"; };
 		AC1CEF871AA8B08D00F0799B /* URLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLImageView.m; sourceTree = "<group>"; };
-		AC1CEF891AA8C32700F0799B /* URLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLTableViewCell.h; sourceTree = "<group>"; };
-		AC1CEF8A1AA8C32700F0799B /* URLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLTableViewCell.m; sourceTree = "<group>"; };
-		AC1CEF8B1AA8C32700F0799B /* URLTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URLTableViewCell.xib; sourceTree = "<group>"; };
+		AC4E1D7E1AA999E0003EDAFE /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		AC4E1D7F1AA999E0003EDAFE /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		AC4E1D811AA99B1A003EDAFE /* Tracks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracks.h; sourceTree = "<group>"; };
+		AC4E1D821AA99B1A003EDAFE /* Tracks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracks.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +100,10 @@
 				AC1CEF601AA8AFFD00F0799B /* Supporting Files */,
 				AC1CEF861AA8B08D00F0799B /* URLImageView.h */,
 				AC1CEF871AA8B08D00F0799B /* URLImageView.m */,
-				AC1CEF891AA8C32700F0799B /* URLTableViewCell.h */,
-				AC1CEF8A1AA8C32700F0799B /* URLTableViewCell.m */,
-				AC1CEF8B1AA8C32700F0799B /* URLTableViewCell.xib */,
+				AC4E1D7E1AA999E0003EDAFE /* Track.h */,
+				AC4E1D7F1AA999E0003EDAFE /* Track.m */,
+				AC4E1D811AA99B1A003EDAFE /* Tracks.h */,
+				AC4E1D821AA99B1A003EDAFE /* Tracks.m */,
 			);
 			path = URLImageView;
 			sourceTree = "<group>";
@@ -215,7 +217,6 @@
 				AC1CEF6C1AA8AFFD00F0799B /* Main.storyboard in Resources */,
 				AC1CEF711AA8AFFD00F0799B /* LaunchScreen.xib in Resources */,
 				AC1CEF6E1AA8AFFD00F0799B /* Images.xcassets in Resources */,
-				AC1CEF8D1AA8C32700F0799B /* URLTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,9 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC1CEF691AA8AFFD00F0799B /* ViewController.m in Sources */,
-				AC1CEF8C1AA8C32700F0799B /* URLTableViewCell.m in Sources */,
 				AC1CEF661AA8AFFD00F0799B /* AppDelegate.m in Sources */,
 				AC1CEF881AA8B08D00F0799B /* URLImageView.m in Sources */,
+				AC4E1D831AA99B1A003EDAFE /* Tracks.m in Sources */,
+				AC4E1D801AA999E0003EDAFE /* Track.m in Sources */,
 				AC1CEF631AA8AFFD00F0799B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +430,7 @@
 				AC1CEF821AA8AFFD00F0799B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC1CEF831AA8AFFD00F0799B /* Build configuration list for PBXNativeTarget "URLImageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +439,7 @@
 				AC1CEF851AA8AFFD00F0799B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,34 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CEv-D9-hAY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Gp-iM-3Dg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tux-8O-Cic">
+        <scene sceneID="Qsq-2q-JMy">
             <objects>
-                <tableViewController id="CEv-D9-hAY" customClass="ViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="22" sectionFooterHeight="22" id="fiN-h6-iDP">
+                <tableViewController id="1Gp-iM-3Dg" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="QH6-7F-aNy">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="128" id="Wxj-3L-rte" customClass="URLTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="HJp-5l-PCw">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wxj-3L-rte" id="LZz-AX-bVA">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HJp-5l-PCw" id="x8N-Zi-qAe">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TcD-K4-He6" customClass="URLImageView">
+                                            <rect key="frame" x="8" y="8" width="64" height="64"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="Rrm-7V-bod"/>
+                                                <constraint firstAttribute="width" constant="64" id="rPj-ws-MNK"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="7nI-k8-ZeU">
+                                            <rect key="frame" x="80" y="51" width="504" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title - Artist" lineBreakMode="tailTruncation" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="bg7-ch-mOD">
+                                            <rect key="frame" x="80" y="29" width="504" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="7nI-k8-ZeU" secondAttribute="centerY" id="8Qj-Sz-Tfd"/>
+                                        <constraint firstItem="7nI-k8-ZeU" firstAttribute="leading" secondItem="TcD-K4-He6" secondAttribute="leading" constant="72" id="BPG-TJ-ERf"/>
+                                        <constraint firstAttribute="centerY" secondItem="TcD-K4-He6" secondAttribute="centerY" id="Crk-ZF-uhO"/>
+                                        <constraint firstItem="7nI-k8-ZeU" firstAttribute="top" secondItem="bg7-ch-mOD" secondAttribute="bottom" constant="1" id="H2R-eE-NVP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="bg7-ch-mOD" secondAttribute="trailing" constant="8" id="PNe-2f-DMZ"/>
+                                        <constraint firstItem="bg7-ch-mOD" firstAttribute="leading" secondItem="TcD-K4-He6" secondAttribute="trailing" constant="8" id="iBp-ge-HOA"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7nI-k8-ZeU" secondAttribute="trailing" constant="8" id="n9T-wh-Hx9"/>
+                                        <constraint firstItem="TcD-K4-He6" firstAttribute="leading" secondItem="x8N-Zi-qAe" secondAttribute="leadingMargin" id="q5h-Au-Rfm"/>
+                                        <constraint firstAttribute="centerY" secondItem="bg7-ch-mOD" secondAttribute="centerY" id="yMe-fV-N4n"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="8Qj-Sz-Tfd"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="CEv-D9-hAY" id="rol-2q-NqZ"/>
-                            <outlet property="delegate" destination="CEv-D9-hAY" id="c7U-QQ-CYH"/>
+                            <outlet property="dataSource" destination="1Gp-iM-3Dg" id="SlN-Fn-Qt7"/>
+                            <outlet property="delegate" destination="1Gp-iM-3Dg" id="ynI-dm-frM"/>
                         </connections>
                     </tableView>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="013-tr-cSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6m-1v-2r4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="999" y="180"/>
+            <point key="canvasLocation" x="644" y="139"/>
         </scene>
     </scenes>
 </document>
