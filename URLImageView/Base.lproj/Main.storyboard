@@ -21,10 +21,21 @@
                                     <subviews>
                                         <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TcD-K4-He6" customClass="URLImageView">
                                             <rect key="frame" x="8" y="8" width="64" height="64"/>
+                                            <subviews>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="103" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="C9e-O4-E9i">
+                                                    <rect key="frame" x="44" y="44" width="16" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="afX-bL-fl9"/>
+                                                        <constraint firstAttribute="height" constant="16" id="tKT-nV-76L"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="64" id="Rrm-7V-bod"/>
+                                                <constraint firstAttribute="trailing" secondItem="C9e-O4-E9i" secondAttribute="trailing" constant="4" id="rEc-c4-dJt"/>
                                                 <constraint firstAttribute="width" constant="64" id="rPj-ws-MNK"/>
+                                                <constraint firstAttribute="bottom" secondItem="C9e-O4-E9i" secondAttribute="bottom" constant="4" id="rc6-Ft-O48"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="7nI-k8-ZeU">
@@ -64,4 +75,7 @@
             <point key="canvasLocation" x="644" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play" width="128" height="128"/>
+    </resources>
 </document>

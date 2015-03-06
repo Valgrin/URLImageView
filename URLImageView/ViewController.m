@@ -61,7 +61,11 @@
     UILabel *albumLabel = (UILabel *)[cell viewWithTag: 102];
     albumLabel.text = track.album;
     
-    cell.backgroundColor = track.playing ? [UIColor greenColor] : [UIColor clearColor];
+    UIImageView *playImageView = (UIImageView *)[cell viewWithTag: 103];
+    playImageView.hidden = !track.playing;
+    
+    [imageView bringSubviewToFront: playImageView];
+
     return cell;
 }
 
