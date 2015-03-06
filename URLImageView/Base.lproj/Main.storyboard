@@ -41,7 +41,6 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="7nI-k8-ZeU" secondAttribute="centerY" id="8Qj-Sz-Tfd"/>
                                         <constraint firstItem="7nI-k8-ZeU" firstAttribute="leading" secondItem="TcD-K4-He6" secondAttribute="leading" constant="72" id="BPG-TJ-ERf"/>
                                         <constraint firstAttribute="centerY" secondItem="TcD-K4-He6" secondAttribute="centerY" id="Crk-ZF-uhO"/>
                                         <constraint firstItem="7nI-k8-ZeU" firstAttribute="top" secondItem="bg7-ch-mOD" secondAttribute="bottom" constant="1" id="H2R-eE-NVP"/>
@@ -51,11 +50,6 @@
                                         <constraint firstItem="TcD-K4-He6" firstAttribute="leading" secondItem="x8N-Zi-qAe" secondAttribute="leadingMargin" id="q5h-Au-Rfm"/>
                                         <constraint firstAttribute="centerY" secondItem="bg7-ch-mOD" secondAttribute="centerY" id="yMe-fV-N4n"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="8Qj-Sz-Tfd"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
